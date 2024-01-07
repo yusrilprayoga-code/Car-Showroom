@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex max-md:flex-col flex-wrap justify-between px-6 py-10 gap-5 sm:px-16">
         <div className="flex justify-start items-start flex-col gap-6">
           <Image
-            src="/logo.svg"
+            src="/yusrilprayoga.svg"
             alt="logo"
             width={118}
             height={18}
