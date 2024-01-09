@@ -74,10 +74,10 @@ export const manufacturers = [
     {
       title: "About",
       links: [
-        { title: "How it works", url: "/" },
-        { title: "Featured", url: "/" },
-        { title: "Partnership", url: "/" },
-        { title: "Bussiness Relation", url: "/" },
+        { title: "How it works", url: "https://yusrilprayoga.netlify.app/" },
+        { title: "Featured", url: "https://yusrilprayoga.netlify.app/" },
+        { title: "Partnership", url: "https://yusrilprayoga.netlify.app/" },
+        { title: "Bussiness Relation", url: "https://yusrilprayoga.netlify.app/" },
       ],
     },
     {
@@ -92,8 +92,8 @@ export const manufacturers = [
     {
       title: "Socials",
       links: [
-        { title: "Discord", url: "/" },
-        { title: "Instagram", url: "/" },
+        { title: "Discord", url: "" },
+        { title: "Instagram", url: "https://www.instagram.com/moh_yusrilprayoga/" },
         { title: "Twitter", url: "/" },
         { title: "Facebook", url: "/" },
       ],

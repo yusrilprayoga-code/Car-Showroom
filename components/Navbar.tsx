@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import CustomButton from "./CustomButton";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
 
@@ -28,6 +29,7 @@ const Navbar = () => {
           handleClick={() => {}}
         />
         </Link>
+        <UserButton afterSignOutUrl="/"/>
       </nav>
     </header>
   );

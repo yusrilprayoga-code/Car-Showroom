@@ -1,10 +1,25 @@
-import React from 'react'
+"use client"
 
-const LoginButton = () => {
+import { LoginButtonProps } from "@/types"
+import Image from "next/image"
+
+const LoginButton = ({ title, containerStyles, handleClick, btnType, textStyles, rightIcon}: LoginButtonProps) => {
   return (
-    <div className='w-full flex flex-col'>
-        <button className='bg-blue-500 text-white rounded-md px-4 py-2 items-center justify-center item'>Login</button>
-    </div>
+    <button
+        disabled={false}
+        type={btnType || "button"}
+        className={`custom-btn ${containerStyles}`}
+        onClick={handleClick}
+    >
+        <span className={`flex-1 ${textStyles}`}>
+            {title}
+        </span>
+        {rightIcon && (
+            <div className="relative w-6 h-6">
+                <Image src={rightIcon} alt="right arrow" fill className="object-contain" />
+            </div>
+        )}
+    </button>
   )
 }
 

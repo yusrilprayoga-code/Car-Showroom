@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css'
-import { Navbar } from '@/components';
 import Footer from './../components/Footer';
+import { ClerkProvider } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
   title: 'Car Showroom',
@@ -16,12 +16,13 @@ export default function RootLayout({
 }) {
 
   return (
-    
+    <ClerkProvider>
     <html lang="en">
       <body className="relative">
         {children}
         <Footer />
         </body>
     </html>
+    </ClerkProvider>
   )
 }

@@ -30,6 +30,7 @@ const Footer = () => {
                   key={item.title}
                   href={item.url}
                   className="text-gray-700"
+                  target="_blank"
                 >
                   {item.title}
                 </Link>

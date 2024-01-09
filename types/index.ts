@@ -10,6 +10,16 @@ export interface CustomButtonProps {
   isDisabled?: boolean;
 }
 
+export interface LoginButtonProps {
+  title: string;
+  containerStyles?: String;
+  handleClick: MouseEventHandler<HTMLButtonElement>;
+  btnType: "button" | "submit";
+  textStyles?: String;
+  rightIcon?: string;
+  isDisabled?: boolean;
+}
+
 export interface SearchManufacturerProps {
   manufacturers: string;
   setManufacturer: (manufacturer: string) => void;
