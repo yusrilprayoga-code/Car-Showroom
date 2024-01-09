@@ -1,4 +1,4 @@
-import { CarCard, Hero, SearchBar } from "@/components";
+import { CarCard, Hero, Navbar, SearchBar } from "@/components";
 import CustomFilter from "./../components/CustomFilter";
 import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants";
@@ -18,6 +18,7 @@ export default async function Home({searchParams} : {searchParams: any}) {
   
   return (
     <main className="overflow-hidden">
+      <Navbar />
       <Hero />
 
       <div className="mt-12 padding-x padding-y max-width " id="discover">
