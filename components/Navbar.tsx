@@ -21,15 +21,7 @@ const Navbar = () => {
             className="object-contain"
           />
         </Link>
-        <Link href="/Auth" passHref>
-        <CustomButton
-          title="Sign In"
-          btnType="button"
-          containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-          handleClick={() => {}}
-        />
-        </Link>
-        <UserButton afterSignOutUrl="/"/>
+          <UserButton afterSignOutUrl="/"/>
       </nav>
     </header>
   );
