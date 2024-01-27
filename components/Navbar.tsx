@@ -4,9 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import CustomButton from "./CustomButton";
-import { UserButton } from "@clerk/nextjs";
-
 const Navbar = () => {
 
   return (
@@ -21,7 +18,6 @@ const Navbar = () => {
             className="object-contain"
           />
         </Link>
-          <UserButton afterSignOutUrl="/"/>
       </nav>
     </header>
   );
